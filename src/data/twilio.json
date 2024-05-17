@@ -1,0 +1,28 @@
+[
+    {
+        "createdAt": "2024-01-19T00:28:14.441Z",
+        "department": "Engineering",
+        "email": "john.doe@example.com",
+        "last_contacted": "2024-04-30T12:57:21.188Z",
+        "name": "John Doe",
+        "phone": "123-456-7890",
+        "status": "Active",
+        "title": "Software Engineer",
+        "updatedAt": "2024-04-30T12:57:20.969Z",
+        "__v": 0,
+        "_id": "65a9c21ec8be6e9b71c5e009"
+    },
+    {
+        "createdAt": "2024-01-19T00:28:14.441Z",
+        "department": "Engineering",
+        "email": "john@example.com",
+        "last_contacted": "2024-04-30T12:57:21.188Z",
+        "name": "John",
+        "phone": "123",
+        "status": "Active",
+        "title": "Software Engineer",
+        "updatedAt": "2024-04-30T12:57:20.969Z",
+        "__v": 0,
+        "_id": "65a9c21ec8be6e9b71c5e001"
+    }
+]

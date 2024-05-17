@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.flexible-modal {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.flexible-modal-mask {
+  position: fixed;
+  height: 100%;
+  background: rgba(55, 55, 55, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flexible-modal-resizer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+  margin: 5px;
+  border-bottom: solid 2px #333;
+  border-right: solid 2px #333;
+}
+
+.flexible-modal-drag-area {
+  background: rgba(22, 22, 333, 0.2);
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: move;
+}
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+/*toggle button to change between table and cards*/
+.toggle-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-btn {
+  background-color: #15b58e;
+  border: 1px solid #aaa;
+  border-radius: 99px;
+  width: 150px;
+  height: 28px;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.748);
+  position: relative;
+}
+
+.toggle-btn .thumb {
+  height: 20px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 99px;
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*
+.toggle-btn.toggled {
+  background-color: #15b58e;
+}
+*/
+.toggle-btn:hover {
+  border-color: #6f6f6f;
+}
+
+.toggle-btn.toggled .thumb {
+  left: calc(150px - 65px);
+}
+
+span#mode-table {
+  position: relative;
+  left: 60px;
+  z-index: 100;
+  cursor: pointer;
+  color: #15b58e;
+}
+
+span#mode-card {
+  position: relative;
+  right: 70px;
+  cursor: pointer;
+  color: #15b58e;
+}
+
+span#mode-title {
+  position: relative;
+  right: 9px;
+}
