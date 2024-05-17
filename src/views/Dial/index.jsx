@@ -7,8 +7,9 @@ const Dial = () => {
     const [callSid, setCallSid] = useState(null);
     const [phoneNumberInput, setPhoneNumberInput] = useState("");
     const identity = "hamza";
-    const serverUrl = process.env.REACT_APP_SERVER_URL;
+    //const serverUrl = process.env.REACT_APP_SERVER_URL;
 
+    const serverUrl = 'https://d11kfpxsq0vzqa10xswoti5veriu90zl.vercel.app';
 
     fetch(`${serverUrl}/voice/token?identity=${encodeURIComponent(identity)}`)
         .then((response) => response.json())
